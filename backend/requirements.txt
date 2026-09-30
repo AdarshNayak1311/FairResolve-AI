@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+python-jose[cryptography]
+passlib[bcrypt]
+pydantic[email]
+google-genai==2.25.0

@@ -1,0 +1,29 @@
+# Environment files
+.env
+backend/.env
+
+# Python virtual environment
+.venv/
+backend/.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Uploaded evidence / test files
+uploads/
+backend/uploads/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test evidence documents
+*.pdf
