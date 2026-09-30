@@ -1,17 +1,32 @@
-# FairResolve AI — Phase 1
+# FairResolve AI 
 
-Foundation for the CodeStreet 2026 dispute-resolution prototype.
+AI-assisted dispute and chargeback resolution platform with explainable evidence analysis, fairness scoring, and transparent decision-making.
 
-## Phase 1 includes
+## Features
 
-- React + Vite frontend
-- FastAPI backend
-- PostgreSQL database
-- SQLAlchemy ORM
-- JWT authentication
-- Customer / Merchant / Investigator roles
-- Health endpoint
-- Basic professional UI
+- Customer, Merchant, and Investigator role-based workflows
+- JWT authentication and protected APIs
+- Customer transaction and purchase management
+- UPI, Credit Card, and Debit Card transaction support
+- Customer dispute creation directly from purchases
+- Multiple dispute types:
+  - Product Not Received
+  - Wrong Product Received
+  - Product Damaged
+  - Duplicate Charge
+- Evidence upload and document processing
+- Gemini-powered AI evidence understanding
+- Rule-based fallback when Gemini is unavailable
+- Structured fact extraction from evidence
+- Evidence relevance filtering and duplicate-evidence protection
+- Customer vs. merchant evidence comparison
+- Contradiction detection
+- Explainable fairness and evidence scoring
+- AI-assisted decision explanations
+- Investigator review and case resolution
+- Audit trail for dispute activity
+- Interactive Swagger/OpenAPI documentation
+- Responsive React frontend
 
 ## Requirements
 
