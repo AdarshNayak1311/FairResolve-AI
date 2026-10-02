@@ -1,11 +1,6 @@
 from pydantic import BaseModel, EmailStr, ConfigDict, field_validator
-from enum import Enum
 from datetime import datetime
-
-class UserRole(str, Enum):
-    CUSTOMER = "customer"
-    MERCHANT = "merchant"
-    INVESTIGATOR = "investigator"
+from .models import UserRole
 
 class RegisterRequest(BaseModel):
     name: str
