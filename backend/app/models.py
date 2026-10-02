@@ -8,19 +8,11 @@ from sqlalchemy import (
     ForeignKey,
     Text,
     JSON,
-    Enum as SQLEnum,
 )
 from sqlalchemy.orm import relationship
 from datetime import datetime, timezone
 
 from .database import Base
-
-import enum
-
-class UserRole(str, enum.Enum):
-    CUSTOMER = "customer"
-    MERCHANT = "merchant"
-    INVESTIGATOR = "investigator"
 
 class User(Base):
     __tablename__ = "users"
@@ -29,14 +21,7 @@ class User(Base):
     name = Column(String, nullable=False)
     email = Column(String, unique=True, index=True, nullable=False)
     password_hash = Column(String, nullable=False)
-    role = Column(
-        SQLEnum(
-            UserRole,
-            name="userrole",
-            values_callable=lambda enum_cls: [e.value.upper() for e in enum_cls],
-        ),
-        nullable=False,
-    )
+    role = Column(String, nullable=False)
 
     cards = relationship(
         "Card",

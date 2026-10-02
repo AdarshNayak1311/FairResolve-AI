@@ -24,7 +24,7 @@ def create_transaction(
     current_user: User = Depends(get_current_user),
 ):
     # Only customers can create transactions
-    if current_user.role != "customer":
+    if current_user.role != "CUSTOMER":
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Only customers can create transactions",
