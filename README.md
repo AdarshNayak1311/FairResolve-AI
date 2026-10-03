@@ -513,17 +513,29 @@ FairResolve-AI/
 
 ![FairResolve AI Landing Page](screenshots/landing-page.png)
 
+## Login & Role-Based Access
+
+![Login Page](screenshots/login.png)
+
 ## Customer Dashboard
 
 ![Customer Dashboard](screenshots/customer-dashboard.png)
 
 ## Add Purchase & Raise Dispute
 
+![Add Purchase](screenshots/add-purchase.png)
+
 ![Raise Dispute](screenshots/raise-dispute.png)
+
+## Upload Evidence Role-Based
+
+![Upload Evidence](screenshot/upload-evidence.png)
 
 ## AI Evidence Analysis
 
 ![AI Evidence Analysis](screenshots/ai-analysis.png)
+
+![AI Analysis Details](screenshots/ai-analysis-details.png)
 
 ## Merchant Case Review
 
